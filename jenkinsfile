@@ -1,6 +1,5 @@
 node {
-  	stage ('SCM checkout'){
-		credentialsId: '5f1f8a17-54ff-4da3-9581-978133401ef5',
+  	stage ('Clone'){
 		git "https://github.com/hirawahid/pytestp/"
 		}
     stage('build') {
