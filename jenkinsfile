@@ -1,5 +1,5 @@
 node {
-  	stage ('Clone'){
+  	stage ('SCM checkout'){
 		git "https://github.com/hirawahid/pytestp/"
 		}
     stage('build') {
