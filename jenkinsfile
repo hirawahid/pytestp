@@ -1,4 +1,4 @@
-pipeline {
+node {
   stages {
   	stage ('SCM checkout'){
 		git "https://gitlab.com/mbabilo/experitest"
