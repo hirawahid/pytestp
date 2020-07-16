@@ -1,0 +1,201 @@
+{
+  "id": "13c6b7e7-1e34-4af7-9909-6cdac04d5f3a",
+  "tenantId": "avaya",
+  "type": "agentGroup",
+  "json": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "additionalProperties": false,
+    "properties": {
+      "EnableAgentQuery": {
+        "default": true,
+        "title": "EnableAgentQuery",
+        "type": "boolean"
+      },
+      "EnableRouteRegister": {
+        "default": true,
+        "title": "EnableRouteRegister",
+        "type": "boolean"
+      },
+      "MonitoringType": {
+        "default": 1,
+        "maximum": 2147483647,
+        "minimum": -2147483648,
+        "multipleOf": 1,
+        "title": "MonitoringType",
+        "type": "number"
+      },
+      "TServerId": {
+        "default": 0,
+        "maximum": 2147483647,
+        "minimum": -2147483648,
+        "multipleOf": 1,
+        "title": "TServerId",
+        "type": "number"
+      },
+      "acdId": {
+        "$ref": "http://10.25.0.236:4000/tenant/avaya/routing-entity/acd/lookup",
+        "title": "acdId"
+      },
+      "awt": {
+        "$ref": "http://10.25.0.236:4000/tenant/avaya/routing-entity/awt/lookup",
+        "title": "awt"
+      },
+      "benchmarkId": {
+        "maximum": 2147483647,
+        "minimum": -2147483648,
+        "multipleOf": 1,
+        "title": "benchmarkId",
+        "type": "number"
+      },
+      "channelType": {
+        "title": "channelType",
+        "type": "string"
+      },
+      "customGroupId": {
+        "$ref": "http://10.25.0.236:4000/tenant/avaya/routing-entity/customGroup/lookup",
+        "title": "customGroupId"
+      },
+      "cwt": {
+        "$ref": "http://10.25.0.236:4000/tenant/avaya/routing-entity/cwt/lookup",
+        "title": "cwt"
+      },
+      "description": {
+        "title": "description",
+        "type": "string"
+      },
+      "enableForCms": {
+        "title": "enableForCms",
+        "type": "boolean"
+      },
+      "enableForGeneralReports": {
+        "title": "enableForGeneralReports",
+        "type": "boolean"
+      },
+      "expression": {
+        "title": "expression",
+        "type": "string"
+      },
+      "forcedEntryOfSC_CWC": {
+        "default": false,
+        "title": "forcedEntryOfSC_CWC",
+        "type": "boolean"
+      },
+      "id": {
+        "maximum": 2147483647,
+        "minimum": 1,
+        "multipleOf": 1,
+        "title": "id",
+        "type": "number"
+      },
+      "isactive": {
+        "title": "isactive",
+        "type": "boolean"
+      },
+      "lobId": {
+        "$ref": "http://10.25.0.236:4000/tenant/avaya/routing-entity/lineOfBusiness/lookup",
+        "title": "lobId"
+      },
+      "musicOnHold": {
+        "$ref": "http://10.25.0.236:4000/tenant/avaya/routing-entity/mediaObjects/lookup",
+        "title": "musicOnHold"
+      },
+      "name": {
+        "title": "name",
+        "type": "string"
+      },
+      "number": {
+        "title": "number",
+        "type": "string"
+      },
+      "occupancy_threshold": {
+        "maximum": 1.7976931348623157e+308,
+        "minimum": -1.7976931348623157e+308,
+        "title": "occupancy_threshold",
+        "type": "number"
+      },
+      "serviceObserved": {
+        "default": false,
+        "title": "serviceObserved",
+        "type": "boolean"
+      },
+      "serviceObserver": {
+        "items": {
+          "oneOf": [
+            {
+              "properties": {
+                "observer": {
+                  "$ref": "http://10.25.0.236:4000/tenant/avaya/routing-entity/station/lookup",
+                  "title": "observer"
+                }
+              },
+              "required": [
+                "observer"
+              ],
+              "title": "array_obj",
+              "type": "object"
+            }
+          ]
+        },
+        "title": "serviceObserver",
+        "type": "array"
+      },
+      "service_objective": {
+        "maximum": 2147483647,
+        "minimum": -2147483648,
+        "multipleOf": 1,
+        "title": "service_objective",
+        "type": "number"
+      },
+      "serviceproviderId": {
+        "$ref": "http://10.25.0.236:4000/tenant/avaya/routing-entity/serviceProvider/lookup",
+        "title": "serviceproviderId"
+      },
+      "skill_number": {
+        "maximum": 2147483647,
+        "minimum": -2147483648,
+        "multipleOf": 1,
+        "title": "skill_number",
+        "type": "number"
+      },
+      "slt_time": {
+        "default": 20,
+        "maximum": 2147483647,
+        "minimum": -2147483648,
+        "multipleOf": 1,
+        "title": "slt_time",
+        "type": "number"
+      },
+      "state": {
+        "default": 1,
+        "maximum": 2147483647,
+        "minimum": -2147483648,
+        "multipleOf": 1,
+        "title": "state",
+        "type": "number"
+      },
+      "tenantId": {
+        "title": "tenantId",
+        "type": "string"
+      },
+      "timedACWInterval": {
+        "default": 0,
+        "maximum": 2147483647,
+        "minimum": -2147483648,
+        "multipleOf": 1,
+        "title": "timedACWInterval",
+        "type": "number"
+      }
+    },
+    "required": [
+      "name",
+      "id",
+      "tenantId",
+      "occupancy_threshold",
+      "skill_number"
+    ],
+    "title": "agentGroup",
+    "type": "object"
+  },
+  "createdAt": "2020-06-26T19:57:24.056Z",
+  "updatedAt": "2020-06-26T19:57:24.056Z"
+}

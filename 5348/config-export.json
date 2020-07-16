@@ -1,0 +1,53 @@
+{
+    "components": [
+        {
+            "id": "afc6a3eb-2ceb-41d5-9fd5-dac52876e46e",
+            "name": "License",
+            "activeConfigurationId": "e9c2307f-f5d2-4e29-a186-66d81b685226"
+        }
+    ],
+    "schemas": [
+        {
+            "getCustomTypeUsedIds": [],
+            "id": "89eecf26-1545-4755-a928-b6bbd5cf8a7a",
+            "name": "Auto [2020-02-28]",
+            "schemaType": "schema",
+            "json": {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "additionalProperties": false,
+                "properties": {
+                    "LICENSE_KEY": {
+                        "date_added": "28/02/2020",
+                        "default": "",
+                        "description": "License key added by config daemon in Afiniti Core",
+                        "title": "LICENSE_KEY",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "LICENSE_KEY"
+                ],
+                "title": "Root",
+                "type": "object"
+            },
+            "messages": "Published by config_daemon via libafiniti_config on 24-Apr-2020 at 12:56:03 PM UTC.",
+            "componentId": "afc6a3eb-2ceb-41d5-9fd5-dac52876e46e",
+            "dependencies": []
+        }
+    ],
+    "configurations": [
+        {
+            "getDependencyIds": [],
+            "id": "e9c2307f-f5d2-4e29-a186-66d81b685226",
+            "name": "Default",
+            "data": {
+                "LICENSE_KEY": ""
+            },
+            "draft": false,
+            "messages": "Published by config_daemon via libafiniti_config on 24-Apr-2020 at 12:56:03 PM UTC. Values sourced from schema defaults",
+            "schemaId": "89eecf26-1545-4755-a928-b6bbd5cf8a7a",
+            "componentId": "afc6a3eb-2ceb-41d5-9fd5-dac52876e46e"
+        }
+    ],
+    "version": "2.6.0"
+}

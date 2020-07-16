@@ -1,0 +1,1 @@
+['guid', 'tenant', 'acd_id', 'agent_id', 'agent_group_id', 'agent_group_level', 'agent_state', 'agent_wait_threshold', 'event_time', 'busy_reason_code', 'ixn_id', 'avg_agent_wait_time', 'control_returned', 'control_reason', 'data_creation_time', 'db_insertion_time']

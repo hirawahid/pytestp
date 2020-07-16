@@ -1,0 +1,1 @@
+['guid', 'ixn_guid', 'ixn_id', 'agent_group_id', 'event_time', 'event_type', 'estimated_ans_time', 'call_priority', 'call_wait_threshold', 'call_ewt', 'acd_calls_in_queue', 'acd_agent_surplus', 'afiniti_agents_available', 'afiniti_calls_in_queue', 'data_creation_time', 'db_insertion_time']
