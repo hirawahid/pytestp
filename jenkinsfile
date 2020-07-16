@@ -1,0 +1,22 @@
+https://github.com/hirawahid/pytestp
+#!/bin/bash
+
+echo '#### Create Virtual Environment ####'
+VIRTUAL_ENV_NAME='virtual-environment'
+virtualenv $VIRTUAL_ENV_NAME
+
+
+echo '#### Activate Virtual Environment ####'
+source $VIRTUAL_ENV_NAME/bin/activate
+
+
+echo '#### Install requirements ####'
+pip install -r ./requirements.txt
+
+
+echo '#### Run tests ####'
+py.test --alluredir=../../allure-results scenarios/Tests.py  
+
+ 
+echo ### deactivate virtual environment ###
+deactivate
