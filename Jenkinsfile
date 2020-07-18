@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('start') {
+    stage('Build') {
       steps {
-        readTrusted 'https://github.com/hirawahid/pytestp'
+        echo 'Built Successfully'
       }
     }
 
