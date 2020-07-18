@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('run') {
+      steps {
+        sh 'python pytest Tests.py'
+      }
+    }
+
   }
 }
